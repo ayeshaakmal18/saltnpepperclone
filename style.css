@@ -1,0 +1,1086 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #0d0d0d;
+}
+
+
+
+/* NAVBAR */
+ .main-navbar {
+    background: black;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* LOGO */
+ .logo {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.logo-main {
+    font-size: 26px;
+    font-weight: bold;
+    color: white !important;
+}
+
+.logo-sub {
+    font-size: 14px;
+    color: red;
+    font-style: italic;
+    margin-left: 2px;
+}
+
+/* NAV LINKS */
+ .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* BUTTONS */
+.btn-outline {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 8px 16px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.btn-red {
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 25px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+} 
+
+/* HAMBURGER */
+ .menu-icon {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+#menu-toggle {
+    display: none;
+} 
+
+/* RESPONSIVE */
+ @media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+        
+    } 
+ 
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: black;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+        padding: 20px 0;
+        display: none;
+    }
+
+    #menu-toggle:checked ~ .nav-links {
+        display: flex;
+    }
+} 
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .logo-main {
+        font-size: 22px;
+    }
+
+    .logo-sub {
+        font-size: 12px;
+    }
+} 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+/* SECTION */
+.brands-section {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+/* HEADING */
+.brands-section h1 {
+    font-size: 42px;
+    font-weight: 300;
+    line-height: 1.3;
+}
+
+.brands-section h1 span {
+    font-weight: 700;
+}
+
+/* SUBTITLE */
+.subtitle {
+    margin-top: 15px;
+    font-size: 15px;
+    color: #cfcfcf;
+}
+
+/* GRID */
+.brands-grid {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* CARD */
+.brand-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.brand-card img {
+    width: 100%;
+    max-width: 260px;
+    background: white;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+/* BUTTON */
+.brand-card button {
+    background: transparent;
+    color: white;
+    border: 1px solid #555;
+    padding: 12px 26px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.brand-card button:hover {
+    background: white;
+    color: black;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+    .brands-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .brands-section h1 {
+        font-size: 28px;
+    }
+
+    .brands-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .brand-card img {
+        max-width: 240px;
+    }
+}
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background-color: black !important;
+  color: #ffffff !important;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 60px 20px;
+   background: black;
+    color: white;
+}
+
+.header h1 {
+  font-size: 48px;
+  letter-spacing: 1px;
+}
+
+.header h2 {
+  font-size: 36px;
+  margin-top: 10px;
+}
+
+.header p {
+  color: #bbbbbb;
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+/* Franchise Section */
+.franchise-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  background: black;
+    color: white;
+}
+
+/* Card */
+.franchise-card {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+   background: black;
+    color: white;
+  
+}
+
+/* .franchise-card.reverse { */
+    /* display: flex;
+  flex-direction: row-reverse !important; */
+/* } */
+
+/* Text */
+.franchise-text {
+  flex: 1;
+   background: black;
+    color: white;
+}
+
+.city {
+  color: #ff2a2a;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.franchise-text h3 {
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+.franchise-text p {
+  color: #cccccc;
+  margin: 8px 0;
+  font-size: 15px;
+}
+
+/* Button */
+.franchise-text button {
+  margin-top: 20px;
+  padding: 10px 24px;
+  border-radius: 25px;
+  border: 1px solid #ffffff;
+  background: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.franchise-text button:hover {
+  background: #ff2a2a;
+  border-color: #ff2a2a;
+}
+
+/* Image */
+.franchise-image {
+  flex: 1;
+}
+
+.franchise-image img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .franchise-card,
+  .franchise-card.reverse {
+    flex-direction: column;
+  }
+
+  .franchise-text h3 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 36px;
+  }
+
+  .header h2 {
+    font-size: 26px;
+  }
+}
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background-color: #0b0b0b;
+  color: #ffffff;
+}
+
+/* Section */
+.franchise-section {
+  padding: 80px 20px;
+}
+
+/* Layout */
+.franchise-content {
+  max-width: 1200px;
+  margin: auto;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 50px;
+}
+
+/* Left Text */
+.franchise-info {
+  flex: 1;
+}
+
+.city {
+  color: #ff2a2a;
+  letter-spacing: 3px;
+  font-size: 14px;
+}
+
+.franchise-info h2 {
+  font-size: 40px;
+  margin: 15px 0 20px;
+}
+
+.franchise-info h2 span {
+  font-weight: 800;
+}
+
+.detail {
+  color: #cfcfcf;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 28px;
+  border-radius: 30px;
+  border: 2px solid #ffffff !important;
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.3s ease;
+  /* margin-top: 20px;
+  padding: 10px 24px;
+  border-radius: 25px;
+  border: 1px solid #ffffff;
+  background: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.3s; */
+}
+
+.btn:hover {
+  background-color: #ff2a2a;
+  border-color: #ff2a2a;
+}
+
+/* Image */
+.franchise-image {
+  flex: 1;
+}
+
+.franchise-image img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .franchise-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .franchise-info h2 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .franchise-info h2 {
+    font-size: 26px;
+  }
+
+  .detail {
+    font-size: 14px;
+  }
+}
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background-color: #0b0b0b;
+  color: #ffffff;
+}
+
+/* Section */
+.express-section {
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.express-section h1 {
+  font-size: 40px;
+}
+
+.express-section h2 {
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+
+/* Grid */
+.express-grid {
+  max-width: 1300px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 35px;
+}
+
+/* Card */
+.express-card {
+  background-color: #111;
+  border-radius: 10px;
+  padding: 18px;
+  transition: 0.3s ease;
+}
+
+.express-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Image */
+.express-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Text */
+.express-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.express-card h3 span {
+  color: #ff2a2a;
+}
+
+.express-card p {
+  color: #cccccc;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+/* Button */
+.express-card a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.express-card a:hover {
+  background-color: #ff2a2a;
+  border-color: #ff2a2a;
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  .express-section h1 {
+    font-size: 30px;
+  }
+
+  .express-section h2 {
+    font-size: 24px;
+  }
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background-color: #0f0f0f;
+    color: #ffffff;
+}
+
+/* Section */
+.franchise-section {
+    padding: 60px 8%;
+}
+
+/* Title */
+.section-title {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.section-title span {
+    font-weight: 400;
+}
+
+/* Layout */
+.franchise-container {
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    gap: 50px;
+}
+
+/* Image */
+.franchise-image {
+    flex: 1.2;
+}
+
+.franchise-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Content */
+.franchise-content {
+    flex: 1;
+    flex-direction: column;
+}
+
+.location {
+    color: #e60023;
+    letter-spacing: 3px;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.franchise-content h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.info {
+    font-size: 15px;
+    color: #cfcfcf;
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+/* Button */
+.btn {
+    /* display: inline-block; */
+    margin-top: 20px;
+    padding: 12px 28px;
+    background-color: #067220 !important;
+    color: #fff !important;
+    text-decoration: none;
+    border-radius: 100px !important;
+    font-size: 14px;
+    transition: background 0.3s ease;
+    width: 35%;
+}
+
+.btn:hover {
+    background-color: #218838 !important;
+}
+
+/* ===================== */
+/* Responsive Design */
+/* ===================== */
+
+@media (max-width: 992px) {
+    .franchise-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .franchise-content {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-title {
+        font-size: 30px;
+    }
+
+    .franchise-content h2 {
+        font-size: 24px;
+    }
+
+    .info {
+        font-size: 14px;
+    }
+}
+@media (max-width: 545px) {
+    .btn {
+    /* display: inline-block; */
+    margin-top: 20px !important;
+    padding: 12px 28px !important;
+    background-color: #067220 !important;
+    color: #fff !important;
+    text-decoration: none !important;
+    border-radius: 100px !important;
+    font-size: 14px !important;
+    transition: background 0.3s ease !important;
+    width: 80% !important;
+}
+    
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #000;
+    color: #fff;
+}
+
+/* Section */
+.express-section {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+/* Title */
+.main-title {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+
+.main-title span {
+    font-weight: 400;
+}
+
+.main-title small {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Grid */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
+
+/* Card */
+.card {
+    background: #fff;
+    color: #000;
+    padding: 40px 20px;
+    border-radius: 6px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+}
+
+/* Icon */
+.icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 15px;
+    background: #f2f2f2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+/* Status */
+.status {
+    color: red;
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+/* Text */
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card h3 span {
+    font-weight: 400;
+}
+
+.card p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* ===================== */
+/* Responsive Design */
+/* ===================== */
+
+@media (max-width: 992px) {
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .main-title {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 576px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .main-title {
+        font-size: 28px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #000;
+    color: #ccc;
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(90deg, #000, #111);
+    padding: 70px 8% 0;
+}
+
+/* Grid */
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+/* Columns */
+.footer-col h3 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.footer-col p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+/* Logo */
+.logo {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.logo span {
+    font-size: 14px;
+    color: red;
+}
+
+/* Links */
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-col a:hover {
+    color: red;
+}
+
+/* Policy links */
+.policy-links {
+    margin-top: 20px;
+}
+
+.policy-links a {
+    margin-right: 15px;
+    font-size: 13px;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    width: 38px;
+    height: 38px;
+    background: red;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 16px;
+}
+
+/* Store buttons */
+.store-buttons img {
+    width: 140px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Bottom */
+.footer-bottom {
+    margin-top: 50px;
+    padding: 20px 0;
+    border-top: 1px solid #222;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #aaa;
+}
+
+/* ===================== */
+/* Responsive */
+/* ===================== */
+
+@media (max-width: 992px) {
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+@media (max-width: 768px) {
+  .nav-links {
+    padding: 25px 0;
+  }
+
+  .nav-links a,
+  .nav-links button {
+    width: 90%;
+    text-align: center;
+  }
+
+  .btn-outline,
+  .btn-red {
+    width: 90%;
+  }
+}
+.carousel img {
+  object-fit: cover;
+  max-height: 70vh;
+}
+
+@media (max-width: 576px) {
+  .carousel img {
+    max-height: 45vh;
+  }
+}
+@media (max-width: 400px) {
+  .brands-section h1 {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+  }
+
+  .brand-card button {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .franchise-text,
+  .franchise-info {
+    text-align: center;
+  }
+
+  .franchise-text button,
+  .franchise-info .btn {
+    width: 90%;
+  }
+}
+@media (max-width: 360px) {
+  .express-card {
+    padding: 14px;
+  }
+
+  .express-card h3 {
+    font-size: 17px;
+  }
+
+  .express-card p {
+    font-size: 13px;
+  }
+}
+@media (max-width: 576px) {
+  .card {
+    padding: 30px 18px;
+  }
+
+  .icon {
+    width: 42px;
+    height: 42px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 480px) {
+  .store-buttons img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .policy-links a {
+    display: block;
+    margin-bottom: 8px;
+  }
+}
